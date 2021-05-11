@@ -121,11 +121,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Home.cpp" />
+    <ClCompile Include="Serial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Home.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Serial.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

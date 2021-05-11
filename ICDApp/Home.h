@@ -35,6 +35,9 @@ namespace ICDApp {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^ button_openConnection;
+	protected:
+	private: System::Windows::Forms::Button^ button_closeConnection;
 
 	private:
 		/// <summary>
@@ -49,11 +52,39 @@ namespace ICDApp {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Home";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->button_openConnection = (gcnew System::Windows::Forms::Button());
+			this->button_closeConnection = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// button_openConnection
+			// 
+			this->button_openConnection->Location = System::Drawing::Point(490, 133);
+			this->button_openConnection->Name = L"button_openConnection";
+			this->button_openConnection->Size = System::Drawing::Size(164, 44);
+			this->button_openConnection->TabIndex = 0;
+			this->button_openConnection->Text = L"Open Connection";
+			this->button_openConnection->UseVisualStyleBackColor = true;
+			// 
+			// button_closeConnection
+			// 
+			this->button_closeConnection->Location = System::Drawing::Point(490, 183);
+			this->button_closeConnection->Name = L"button_closeConnection";
+			this->button_closeConnection->Size = System::Drawing::Size(164, 44);
+			this->button_closeConnection->TabIndex = 1;
+			this->button_closeConnection->Text = L"Close Connection";
+			this->button_closeConnection->UseVisualStyleBackColor = true;
+			// 
+			// Home
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(817, 510);
+			this->Controls->Add(this->button_closeConnection);
+			this->Controls->Add(this->button_openConnection);
+			this->Name = L"Home";
+			this->Text = L"Home";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
 	};
