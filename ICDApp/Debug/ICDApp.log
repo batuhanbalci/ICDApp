@@ -1,0 +1,6 @@
+﻿  Home.cpp
+C:\Users\Batuhan\source\repos\ICDApp\ICDApp\Home.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  Home.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  ICDApp.vcxproj -> C:\Users\Batuhan\source\repos\ICDApp\Debug\ICDApp.exe
